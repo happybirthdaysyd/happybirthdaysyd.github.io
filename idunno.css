@@ -11,27 +11,54 @@ body{
 	"header header header"
 	"emptyA main emptyB"
 	"footer footer footer";
-	height: 100vh;
-	width: 100vw;
+	height: 98vh;
+	width: 98vw;
 	align-items: stretch;
-	grid-gap: 5px;
+	grid-gap: 4px;
 }
 
 #main{
 	grid-area: main;
-	background-color: #eee;
+	background-color: rgba(100,180,255,0.5);
 	display: grid;
 	grid-template-columns: 8% 84% 8%;
-	grid-template-rows: 10% 80% 10%;
+	grid-template-rows: 14% 76% 10%;
 	grid-template-areas:
 	"headerB headerB headerB"
-	"emptyAB main emptyBB"
+	"emptyAB mainB emptyBB"
 	"footerB footerB footerB";
 	align-items: stretch;
 	grid-gap: 2px;
 }
 
 #header{
-	background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/5614/pixel-cakes_shop_preview.jpg");
+	/*background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/5614/pixel-cakes_shop_preview.jpg");*/
 	grid-area: header;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+#headerB{
+	grid-area: headerB;
+	justify-self: center;
+	align-self: center;
+}
+
+#headerB img{
+	height: 30%;
+	width: 30%;
+}
+
+#title{
+	grid-area: title;
+}
+
+#text{
+	grid-area: mainB;
+}
+
+#footerB{
+	grid-area: footerB;
 }
