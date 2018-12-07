@@ -8,7 +8,7 @@ body{
 #container{
 	display: grid;
 	grid-template-columns: 8% 84% 8%;
-	grid-template-rows: 10% 84% 6%;
+	grid-template-rows: 10% auto auto;
 	grid-template-areas:
 	"header header header"
 	"emptyA main emptyB"
