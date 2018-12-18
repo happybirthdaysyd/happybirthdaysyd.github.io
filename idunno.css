@@ -55,11 +55,18 @@ body{
 }
 
 #headerB img{
-	height: 20%;
-	width: 20%;
+	height: 15%;
+	width: 15%;
 	margin: auto;
 	display: block;
-	margin-top: 15%;
+	margin-top: 10%;
+}
+
+@media screen and (max-width: 1000px){
+	#headerB img{
+		width: 20%;
+		height: 20%;
+	}
 }
 
 @media screen and (max-width: 475px){
@@ -77,20 +84,60 @@ body{
 	grid-area: mainB;
 	height: auto;
 	font-size: 100%;
-	margin-top: 19%;
+	margin: auto;
+	margin-top: 13%;
 	line-height: 180%;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
 	#text{
 		font-size: 80%;
 	}
 }
 
-@media screen and (min-width: 1024px){
+/*@media screen and (min-width: 1024px){
 	#text{
 		margin-left: 10%;
 	}
+}*/
+
+.btw{
+	font-size: 90%;
+}
+
+.link{
+	display: inline;
+	color: rgba(50,75,255,0.8);
+}
+
+video{
+	display: block;
+	width: 60%;
+	height: auto;
+	margin: auto;
+}
+
+@media screen and (max-width: 650px){
+	video{
+		width: 75%;
+	}
+}
+
+.back{
+	position: relative;
+	left: 5%;
+	font-size: 200%;
+	width: 5%;
+}
+
+.back:hover{
+	cursor: pointer;
+	color: #444;
+}
+
+.link:hover{
+	cursor: pointer;
+	color: rgba(50,75,215,0.8);
 }
 
 #footerB{
